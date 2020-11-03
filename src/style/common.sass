@@ -1,0 +1,202 @@
+// importing fonts 
+// ============================================================== 
+@font-face
+    font-family: roboto-light
+    src: url("vendor/webfonts/custom/Roboto/Roboto-Light.ttf")
+
+@font-face
+    font-family: roboto-regular
+    src: url("vendor/webfonts/custom/Roboto/Roboto-Regular.ttf")
+
+@font-face
+    font-family: roboto-medium
+    src: url("vendor/webfonts/custom/Roboto/Roboto-Medium.ttf")
+
+@font-face
+    font-family: roboto-bold
+    src: url("vendor/webfonts/custom/Roboto/Roboto-Bold.ttf")
+
+@font-face
+    font-family: poppins-light
+    src: url("vendor/webfonts/custom/Poppins/Poppins-Light.ttf")
+
+@font-face
+    font-family: poppins-regular
+    src: url("vendor/webfonts/custom/Poppins/Poppins-Regular.ttf")
+
+@font-face
+    font-family: poppins-medium
+    src: url("vendor/webfonts/custom/Poppins/Poppins-Medium.ttf")
+
+@font-face
+    font-family: poppins-bold
+    src: url("vendor/webfonts/custom/Poppins/Poppins-Bold.ttf")
+
+
+
+
+
+// reseting basic styles 
+// ============================================================== 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    border: none
+    background: none
+    border-radius: 0
+    outline: none
+    text-decoration: none
+    font-family: roboto-regular
+    color: #646464
+
+    a,
+    button
+        cursor: pointer
+
+
+
+
+
+// page loader styles 
+// ==============================================================
+.loader 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 9999
+    display: flex
+    align-items: center
+    justify-content: center
+
+    // loader background 
+    background-color: transparent
+
+.loader img 
+    animation: fadeOut
+    animation-fill-mode: forwards
+
+    // animation durstion in second
+    animation-duration: 1s
+
+    // loader image dimension 
+    width: 300px
+    height: auto
+
+
+@media only screen and (max-width: 768px) 
+    .loader img 
+
+        // loader image dimension 
+        width: 150px
+  
+
+
+.loader.hidden 
+    animation: vanish
+    animation-fill-mode: forwards
+
+    // animation durstion in second
+    animation-duration: 1s
+
+
+// the background animation 
+@keyframes vanish 
+    75% 
+        opacity: 1
+        visibility: hidden
+
+    100% 
+        opacity: 0
+        visibility: hidden
+        background-image: none
+  
+
+
+// the loader animation 
+@keyframes fadeOut 
+    100% 
+        opacity: 0
+        visibility: hidden
+
+
+// main content styles
+// =================================================================
+.main
+    height: 100%
+    overflow: hidden
+    overflow-y: scroll
+    background-image: url('../file/bg.jpeg')
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+
+// animation for form
+// ==================================================================
+.animDrop
+    animation: droppedIn
+    animation-fill-mode: forwards
+
+    // animation durstion in second
+    animation-duration: 1s
+
+@keyframes droppedIn
+    0% 
+        opacity: 0
+        transform: translateY(-5%)
+    
+    100% 
+        opacity: 1
+        transform: translateY(0%)
+
+
+
+
+
+// language option styles
+// ==================================================================
+.langOption
+    position: absolute
+    top: 15px
+    right: 20px
+    font-size: 0.94375rem
+
+    a
+        font-family: poppins-light
+        text-transform: uppercase
+    
+    ul
+        list-style-type: none
+        background-color: rgb(243, 248, 250)
+        padding: 10px
+        width: 175px
+        overflow: hidden
+        margin-top: 5px
+        box-shadow: 1px 2px 11px #c0c0c0
+        position: absolute
+        right: 0px
+        top: 100%
+        z-index: 99
+        display: none
+
+        &.showed
+            display: block
+
+        li
+            padding: 5px 5px 0
+            a
+                text-decoration: none
+                font-size: x-small
+                display: flex
+                align-items: center
+
+                img
+                    width: 25px
+                    height: 25px
+                    border-radius: 50%
+                    margin-right: 5px
+
+                span 
+                    width: calc( 100% - 30px )

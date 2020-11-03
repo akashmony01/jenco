@@ -1,0 +1,203 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Rregistration Page</title>
+
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/common.css">
+	<link rel="stylesheet" href="src/style/register.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	
+	<!-- custom js -->
+	<script src="src/script/main.js"></script>
+</head>
+<body>
+	<!-- preloader animation -->
+	<div class="loader">
+		<img src="src/file/logo.gif">
+	</div>
+
+	<!-- main content start here -->
+	<main id="main" class="main">
+		<form class="regForm animDrop">
+			<!-- language option -->
+			<div class="langOption">
+				<a id="langOptionOpener">
+					English
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<ul id="langMenu">
+					<li>
+						<a href="">
+							<img src="src/file/united-kingdom.png" alt="flag">
+							<span>
+								English
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/bangladesh.png" alt="flag">
+							<span>
+								Bengali
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/thailand.png" alt="flag">
+							<span>
+								Thai
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/japan.png" alt="flag">
+							<span>
+								japanese
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/china.png" alt="flag">
+							<span>
+								Chinese Simplified
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/germany.png" alt="flag">
+							<span>
+								German
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/south-korea.png" alt="flag">
+							<span>
+								Korean
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- logo and title -->
+			<div class="logoTitle">
+				<img src="src/file/logo.gif" alt="logo">
+				<h1>Sign Up</h1>
+			</div>
+			<!-- main input fields -->
+			<div class="inputField">
+				<div class="inputFieldLeft">
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Full Name" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<select name="" id="" required>
+							<option value="">
+								-- Select Your Country --
+							</option>
+							<option value="1">
+								Afghanistan
+							</option>
+							<option value="2">
+								Bangladesh
+							</option>
+							<option value="3">
+								China
+							</option>
+							<option value="4">
+								Denmark
+							</option>
+							<option value="5">
+								Germany
+							</option>
+						</select>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="User Name" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<input type="email" placeholder="Email" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-lock"></i>
+						<input id="userPass" type="password" placeholder="Password" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-lock"></i>
+						<input id="confirmPass" type="password" placeholder="Confirm Password" required>
+					</div>
+				</div>
+
+				<div class="inputFieldRight">
+					<div class="inputItem">
+						<i class="fas fa-lock"></i>
+						<input type="text" placeholder="transactipn PIN (6 digits)" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-lock"></i>
+						<input type="text" placeholder="Confirm Transactipn PIN" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Referral Id" required>
+					</div>
+					<div class="inputItem">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Placement Id (optional)">
+					</div>
+					<div class="inputItem captchaField">
+						<i class="fas fa-shield-alt"></i>
+						<input type="text" placeholder="Captcha" required>
+						<div class="captchaContent">
+							<img src="src/file/captcha.png" alt="captcha">
+							<a href="">
+								<i class="fas fa-sync-alt"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="inputFieldSubmit">
+					<div class="inputItem checkPermission">
+						<input id="permission" type="checkbox">
+						<label for="permission">
+							I have read and agree to the Terms and Conditions
+						</label>
+					</div>
+					<div class="inputItem submitButton">
+						<button id="submitForm" type="submit">Register</button>
+					</div>
+					<div class="inputItem formExtra">
+						<p>
+							Existing user?
+						</p>
+						<a href="login.html">
+							Login here
+						</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</main><!-- /maincontent -->
+</body>
+</html>

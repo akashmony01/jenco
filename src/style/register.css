@@ -1,0 +1,220 @@
+.regForm {
+  border-radius: 15px;
+  max-width: 520px;
+  padding: 2.5% 2vw;
+  padding-bottom: 3%;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .regForm {
+    max-width: 90%;
+    margin: 5%;
+    padding: 5%;
+  }
+}
+
+.regForm .logoTitle {
+  text-align: center;
+}
+
+.regForm .logoTitle img {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.regForm .logoTitle h1 {
+  margin-top: 15px;
+  font-size: 1.51rem;
+  font-family: roboto-regular;
+}
+
+.regForm .inputField {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.regForm .inputField .inputFieldLeft,
+.regForm .inputField .inputFieldRight {
+  width: 47.5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .regForm .inputField .inputFieldLeft,
+  .regForm .inputField .inputFieldRight {
+    width: 100%;
+  }
+}
+
+.regForm .inputField .inputFieldLeft .failAlert,
+.regForm .inputField .inputFieldRight .failAlert {
+  color: red;
+  font-size: small;
+  margin-bottom: 5px;
+  display: block;
+  opacity: .5;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem,
+.regForm .inputField .inputFieldRight .inputItem {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem i,
+.regForm .inputField .inputFieldRight .inputItem i {
+  position: absolute;
+  bottom: 10.5px;
+  left: 15px;
+  font-size: small;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem input,
+.regForm .inputField .inputFieldLeft .inputItem select,
+.regForm .inputField .inputFieldRight .inputItem input,
+.regForm .inputField .inputFieldRight .inputItem select {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5rem 0.7rem;
+  padding-left: 35px;
+  border-radius: 3px;
+  height: auto;
+  position: relative;
+  margin: 0;
+  font-size: small;
+  height: 35px;
+  line-height: 32px;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem input::placeholder,
+.regForm .inputField .inputFieldLeft .inputItem select::placeholder,
+.regForm .inputField .inputFieldRight .inputItem input::placeholder,
+.regForm .inputField .inputFieldRight .inputItem select::placeholder {
+  font-size: small;
+  color: #646464;
+  opacity: 1;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem.captchaField input,
+.regForm .inputField .inputFieldRight .inputItem.captchaField input {
+  padding-right: 150px;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem.captchaField .captchaContent,
+.regForm .inputField .inputFieldRight .inputItem.captchaField .captchaContent {
+  position: absolute;
+  right: 0;
+  height: 35px;
+  bottom: 0;
+  width: 140px;
+  background-color: gray;
+  padding: 5px;
+  padding-right: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem.captchaField .captchaContent img,
+.regForm .inputField .inputFieldRight .inputItem.captchaField .captchaContent img {
+  height: 100%;
+  width: 100px;
+}
+
+.regForm .inputField .inputFieldLeft .inputItem.captchaField .captchaContent a i,
+.regForm .inputField .inputFieldRight .inputItem.captchaField .captchaContent a i {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 7.5px;
+  left: auto;
+  color: #fff;
+  font-size: 20px;
+}
+
+.regForm .inputField .inputFieldSubmit {
+  width: 100%;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.regForm .inputField .inputFieldSubmit .checkPermission {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+@media only screen and (max-width: 767px) {
+  .regForm .inputField .inputFieldSubmit .checkPermission input {
+    margin-right: 5px;
+  }
+}
+
+.regForm .inputField .inputFieldSubmit .checkPermission label {
+  cursor: pointer;
+  max-width: 250px;
+  font-size: small;
+  color: #3B8ba4;
+  transition: .3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .regForm .inputField .inputFieldSubmit .checkPermission label {
+    max-width: 100%;
+  }
+}
+
+.regForm .inputField .inputFieldSubmit .checkPermission label:hover {
+  color: #386ba4;
+}
+
+.regForm .inputField .inputFieldSubmit .submitButton button {
+  background-color: #386ba4;
+  color: #fff;
+  font-family: Georgia,sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0px;
+  padding: .6rem 1rem;
+  text-align: center;
+  width: 47.5%;
+  margin: 25px 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .regForm .inputField .inputFieldSubmit .submitButton button {
+    width: 100%;
+  }
+}
+
+.regForm .inputField .inputFieldSubmit .formExtra {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.regForm .inputField .inputFieldSubmit .formExtra p {
+  font-size: small;
+  margin: 0;
+  letter-spacing: .5px;
+}
+
+.regForm .inputField .inputFieldSubmit .formExtra a {
+  font-size: small;
+  text-decoration: none;
+  letter-spacing: .5px;
+  color: #3B8ba4;
+  transition: .3s;
+}
+
+.regForm .inputField .inputFieldSubmit .formExtra a:hover {
+  color: #386ba4;
+}
+/*# sourceMappingURL=register.css.map */
