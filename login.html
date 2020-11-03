@@ -1,0 +1,148 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Login Page</title>
+
+	<!-- including bootstrap css -->
+	<link rel="stylesheet" href="src/style/vendor/bootstrap.min.css">
+	<!-- including font awesome css -->
+	<link rel="stylesheet" href="src/style/vendor/font-awesome/fontawesome.min.css">
+
+	<!-- including custom css -->
+	<link rel="stylesheet" href="src/style/login.css">
+
+	<!-- including jquery -->
+	<script src="src/script/vendor/jquery.min.js"></script>
+	
+	<!-- including popper js -->
+	<script src="src/script/vendor/popper.min.js"></script>
+	<!-- including bootsrap js -->
+	<script src="src/script/vendor/bootstrap.min.js"></script>
+	
+	<!-- custom js -->
+	<script src="src/script/login.js"></script>
+</head>
+<body>
+	<!-- preloader animation -->
+	<div class="loader">
+		<img src="src/file/logo.gif">
+	</div>
+
+	<!-- main content start here -->
+	<main id="main" class="main">
+		<form class="loginForm">
+			<!-- language option -->
+			<div class="langOption">
+				<a id="langOptionOpener">
+					English
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<ul id="langMenu">
+					<li>
+						<a href="">
+							<img src="src/file/united-kingdom.png" alt="flag">
+							<span>
+								English
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/bangladesh.png" alt="flag">
+							<span>
+								Bengali
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/thailand.png" alt="flag">
+							<span>
+								Thai
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/japan.png" alt="flag">
+							<span>
+								japanese
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/china.png" alt="flag">
+							<span>
+								Chinese Simplified
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/germany.png" alt="flag">
+							<span>
+								German
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="src/file/south-korea.png" alt="flag">
+							<span>
+								Korean
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- logo and title -->
+			<div class="logoTitle">
+				<img src="src/file/logo.gif" alt="logo">
+				<h1>Sign In</h1>
+			</div>
+			<!-- main input fields -->
+			<div class="inputField">
+				<div class="inputItem">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="User Name / User Id" required>
+				</div>
+				<div class="inputItem">
+					<i class="fas fa-lock"></i>
+					<input type="password" placeholder="Password" required>
+				</div>
+				<div class="inputItem captchaField">
+					<i class="fas fa-shield-alt"></i>
+					<input type="text" placeholder="Captcha" required>
+					<div class="captchaContent">
+						<img src="src/file/captcha.png" alt="captcha">
+						<a href="">
+							<i class="fas fa-sync-alt"></i>
+						</a>
+					</div>
+				</div>
+				<div class="inputItem submitButton">
+					<button type="submit">Login</button>
+				</div>
+				<div class="inputItem formExtra">
+					<div class="extraLeft">
+						<p>
+							Not account yet?
+						</p>
+						<a href="">
+							Resigter here
+						</a>
+					</div>
+					<div class="extraRight">
+						<a href="">
+							Forgot password
+						</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</main><!-- /maincontent -->
+</body>
+</html>
